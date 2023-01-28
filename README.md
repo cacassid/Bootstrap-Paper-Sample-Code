@@ -1,12 +1,3 @@
----
-title: "README"
-output: html_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ## R Markdown
 
 This SAS file provides sample code to calculate corrected seroprevalence estimates with corresponding 95% bootstrap confidence intervals
