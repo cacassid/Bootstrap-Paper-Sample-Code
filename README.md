@@ -20,7 +20,7 @@ Variable descriptions:
 - **HH_WT**
 
 ## Weight calibration
-We use PROC WTADJUST procedure from SUDAAN v 11.0.3 was used for calibration of sample weights and bootstrap replicates. 
+We use PROC WTADJUST procedure from SUDAAN v 11.0.3 for calibration of sample weights. 
 Alternatives include:
 - A SAS Macro (An, 2020): https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2020/4284-2020.pdf
 - The calibrate() function in the R package 'survey' (Lumley, 2022): http://cran.fhcrc.org/web/packages/survey/index.html
