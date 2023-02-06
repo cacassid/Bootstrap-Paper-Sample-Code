@@ -13,12 +13,12 @@ Variable descriptions:
 - **age** age in years of participant
 - **age_cat** age category of participant (In example, =1 if age between 18 and 49 , =2 if age 50+)
 - **serostatus** indicates binary serological test result of participant (In example, =1 if positive for SARS-CoV-2 antibodies, =0 otherwise)
-- **BASEWT** base weight (how to describe?))
-- **STRATUM** stratum number (In example, =1,2, or 3)
-- **CLUSTER_NUM** cluster number (In example, =1,2,3,4,5,6,7,8, or 9)
-- **PSU_WT** weight for each PSU (In C4/example, census blocks served as PSUs)
-- **HH_WT** weight for each SSU (In C4/example, households served as SSUs)
-- **PER_WT** weight for each individual person, the reciprocal of the probability of selection with each household
+- **STRATUM** sample stratum number (In example, =1,2, or 3)
+- **CLUSTER_NUM** sample cluster number (In example, =1,2,3,4,5,6,7,8, or 9)
+- **PSU_WT** weight component for each PSU (reciprocal of probability that a PSU was selected at the first stage of sampling. Note: In C4/example, census blocks served as PSUs)
+- **HH_WT** weight component for each SSU (reciprocal of probability that a SSU was selected at the second stage of sampling, conditional on the selection of its corresponding PSU at the first stage of sampling. Note: In C4/example, households served as SSUs)
+- **PER_WT** weight component for each individual (reciprocal of probability that a person was selected at the third stage of sampling, conditional on the selection of their corresponding PSU and SSU at the first and second stages of sampling.
+- **BASEWT** base weight (reciprocal of participant’s overall probability of selection Note: BASEWT=PSU_WT*HH_WT*PER_WT)
 
 
 ## Weight calibration
