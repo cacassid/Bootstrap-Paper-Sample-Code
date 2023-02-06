@@ -18,7 +18,7 @@ Variable descriptions:
 - **PSU_WT** weight component for each PSU (reciprocal of probability that a PSU was selected at the first stage of sampling. Note: In C4/example, census blocks served as PSUs)
 - **HH_WT** weight component for each SSU (reciprocal of probability that a SSU was selected at the second stage of sampling, conditional on the selection of its corresponding PSU at the first stage of sampling. Note: In C4/example, households served as SSUs)
 - **PER_WT** weight component for each individual (reciprocal of probability that a person was selected at the third stage of sampling, conditional on the selection of their corresponding PSU and SSU at the first and second stages of sampling.
-- **BASEWT** base weight (reciprocal of participant’s overall probability of selection Note: BASEWT=PSU_WT*HH_WT*PER_WT)
+- **BASEWT** base weight (reciprocal of participant’s overall probability of selection Note: BASEWT=PSU_WT * HH_WT * PER_WT)
 
 
 ## Weight calibration
